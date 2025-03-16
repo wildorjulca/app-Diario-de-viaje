@@ -12,8 +12,14 @@ const ReglasValidacionUsuario = [
         .notEmpty()
         .withMessage("Campo email requerido")
         .isLength({ max: 100 })
-        .withMessage("El nombre debe tener máximo 100 caracteres.")
-        
+        .withMessage("El nombre debe tener máximo 100 caracteres."),
+    body("password")
+        .notEmpty()
+        .withMessage("Campo password requerido")
+        .isLength({ max: 255 })
+        .withMessage("Password debe tener máximo 255 caracteres."),
+
+
 
 
     // body("")

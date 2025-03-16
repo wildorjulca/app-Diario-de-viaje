@@ -11,8 +11,7 @@ const app = express()
 // app.use(cors())
 
 app.use(cors({
-    origin: "http://192.168.222.245:8081", // Dirección Expo
-    credentials: true,
+    origin: "*",
 }));
 
 
